@@ -1,0 +1,72 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: aqua; /* es para establexer un color de fondo*/
+    font-family: Arial; /* simplemente es el estilo del texto*/
+
+}
+
+.contenedor {
+    position: absolute; /* este atributo es para que lo elementos puedan posicionarse*/
+    left: 50%; /*se encuentra a la mitad de la pagina en forma horizontal */
+    top: 50%;  /*se encuentra a la mitad de la pagina de forma vertical*/
+    transform: translate(-50%, -50%); /* este atributo ayudo a que los elementos esten a la mitad de la pagina*/
+    width: 300px;
+    padding: 50px 30px; /* es para medir base y la altura del cuadro donde estan los elementos de la clase contenedor*/
+    background-color: #D4CCCA ; /* se forma como un cuadro y solo los elementos que estan dentro del 
+                                        la clase cambia de color*/
+    text-align: center;  /* coloca los elementos de la clase en el centro */
+}
+
+.contenedor h1{
+
+    text-align: center;
+    text-transform:uppercase;
+    color: white; /* simplemente es para darle color al texto el cual es USUARIO*/
+}
+
+.contenedor input[type="text"], .contenedor input[type="password"] { /* estamos seleccionando especificamente
+                                                                        los elementos del ususario y password */
+
+    width: 60%; /* agranda poquito nuestro cuadros de texto*/
+    background:transparent; /*esto hace que el cuadro sea transparente  */
+    outline: none; /* y con esto eliminamos las marcas de los border cuando hacemos click en el cuadro*/
+    border: 2px solid gray; /* es el grosor del contorno de nuestros cuadros de texto*/
+    padding: 10px; /* solo estamos insertando la altura que queramos a nuestro cuadro de texto*/
+    margin-bottom: 14px; /* es la separacion de todos los elementos que estamos seleccionando en la clase*/
+    border-radius: 50px; /* de esta forma nuestros cuadros de texto tiene una forma ovalada*/
+    text-align: center; /* el texto que tenemos como marca de agua dentro de los cuadro de texto se centra*/
+    color: #fff; /* hace que el texto que escribamos sea de color blanco*/
+    transition: .30s;
+    
+}
+
+.contenedor input[type="text"]:focus, .contenedor input[type="password"]:focus { /* el atributo focus es el que permite que se realice la animacion */
+    transition: .30s; /*hace una animacion en donde cuando seleccionas la caja de texto esta se estira creando la animacion
+                        y abajo es el tamano del cuadro que se estira durante su animacion */
+    width: 80%;
+    border-color: aqua;  /* este atributo es el responsable de que cuando seleccionemos el cuadro de texto y se realice
+                            la animacion este cambia de su color gris a un azul de manera temporal y automaica*/
+}
+.contenedor input[type="submit"]{
+
+    width: 40%; /* es el tamano de forma horizontal del boton submit*/
+    border: 2px solid #21a899; /* el contorno del boton se vuelve mas grueso y con un color cian*/
+    background: transparent; /* el boton se vuelve tranparente*/
+    padding: 10px; /* se cambia del tamano de forma vertical*/
+    color: #fff; /*se cambia el color de la letras del boton*/
+    border-radius: 50px; /* el boton cambia a su forma a una ovalada*/
+    outline: none;
+    transition: .30s; /* creo que es el tiempo de espera de la animacion*/
+
+}
+
+.contenedor input[type="submit"]:hover {  /* es te atributo hace que cuando pasemos el mouse por el boton 
+                    este se active que manera automatica la animacion que se hace grande*/
+
+    width: 50%;
+    background: #21a899;
+    cursor:pointer ; /* es para que cuando pases el mouse aparezca el icono de la mano solamente en el boton*/
+
+}
